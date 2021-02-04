@@ -289,16 +289,4 @@ public class Util {
         }
     }
 
-    public static boolean unsupportedPlatform() {
-        String serverName = Bukkit.getName();
-        if (serverName.equalsIgnoreCase("Paper")) {
-            log("&c<============================================================>");
-            log("&cGPFlags is not supported on your server platform '%s'", serverName);
-            log("&eSupported platforms include Spigot, Tuinity, Purpur and Yatopia.");
-            log("&c<============================================================>");
-            return true;
-        }
-        return false;
-    }
-
 }
